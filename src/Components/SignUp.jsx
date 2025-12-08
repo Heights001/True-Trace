@@ -6,13 +6,13 @@ const SignUp = () => {
     const [showConfirm, setShowConfirm] = useState(false);
   return (
     <>
-    <div className='min-h-screen flex flex-col'>
+    <div className='min-h-screen bg-[#0f0f1a] text-[#cfd8dc] font-mono'>
         <div><Navbar /></div>
 
         {/* Centered Form */}
-        <main className='flex flex-1 items-center justify-center bg-gray-100 p-4'>
+        <main className='flex flex-1 items-center justify-center bg-[#0f0f1a] p-4'>
             <div className='w-full max-w-sm bg-white p-8 rounded-lg shadow-lg border'>
-                <form action={"#"} method='POST' className='grid gap-6'>
+                <form action={"#"} method='POST' className='grid gap-6 text-gray-700'>
 
                     <h2 className='text-2xl font-semibold text-center mb-2'> Create an Account </h2>
 

@@ -6,7 +6,8 @@ const Navbar = () => {
         {/* Navbar */}
         <header className="p-6 flex justify-between items-center bg-[#111122]/80 border-b border-[#00ffe5]/50 backdrop-blur-md">
 
-            <h1 className="text-2xl font-bold text-[#00ffe5]">Heights Media-Checker</h1>
+            <img className='w-16 rounded-md' src='/src/assets/Navicon.png'/>
+            <h1 className="text-2xl font-bold text-[#00ffe5]">TrueTrace</h1>
 
             <nav className='flex gap-6'>
 
