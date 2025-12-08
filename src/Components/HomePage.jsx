@@ -62,6 +62,8 @@ const HomePage = () => {
 
             {/* Footer */}
             <footer className="p-6 text-center bg-[#111122]/80 border-t border-[#00ffe5]/50 backdrop-blur-md">
+                <a href="https://www.flaticon.com/free-icons/ethics" title="ethics icons">Ethics icons created by Freepik - Flaticon</a>
+                
                 <p className='text-sm text-[#cfd8dc]/70'>© 2025 TruthAnalyzer. All rights reserved.</p>
             </footer>
     

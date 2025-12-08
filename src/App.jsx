@@ -2,6 +2,7 @@ import HomePage from './Components/HomePage'
 import SignUp from './Components/SignUp'
 import Login from './Components/Login'
 import ForgotPassword from './Components/ForgotPassword';
+import Dashboard from './Components/Dashboard';
 
 export default function App() {  
 
@@ -11,6 +12,7 @@ export default function App() {
       <div><SignUp /></div>
       <div><Login /></div>
       <div><ForgotPassword /></div>
+      <div><Dashboard /></div>
     </>
   );
 };
