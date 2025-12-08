@@ -13,7 +13,7 @@ const HomePage = () => {
 
                 <h2 className='text-5xl md:text-6xl font-bold text-[#00aaff]'> Uncover the Truth </h2>
 
-                <p className='text-lg md:text-xl text-[#cfd8dc]/80 max-w-2xl'> Analyze All digital Media types and detect whether they are AI-generated or real. Take control of digital evidence with out futuristic legal toolkit.</p>
+                <p className='text-lg md:text-xl text-[#cfd8dc]/80 max-w-2xl'> Analyze All digital Media types and detect whether they are AI-generated or real. Take control of digital evidence with our futuristic legal toolkit.</p>
 
                 <a href="#" className='mt-4 px-8 py-3 bg-[#ff00ff] rounded hover:bg-[#ff00ff]/80 text-white font-semibold transition'>
                 Get Started
