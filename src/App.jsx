@@ -1,16 +1,16 @@
-import { useState } from 'react'
 import HomePage from './Components/HomePage'
 import SignUp from './Components/SignUp'
+import Login from './Components/Login'
+import ForgotPassword from './Components/ForgotPassword';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {  
 
   return (
     <>
       <div><HomePage /></div>
       <div><SignUp /></div>
+      <div><Login /></div>
+      <div><ForgotPassword /></div>
     </>
   );
 };
-
-export default App

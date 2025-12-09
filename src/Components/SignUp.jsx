@@ -4,10 +4,11 @@ import Navbar from './Navbar'
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirm, setShowConfirm] = useState(false);
+    
   return (
     <>
-    <div className='min-h-screen bg-[#0f0f1a] text-[#cfd8dc] font-mono'>
-        <div><Navbar /></div>
+    <div className='min-h-screen flex flex-col bg-[#0f0f1a] text-[#cfd8dc] font-mono'>
+        <Navbar />
 
         {/* Centered Form */}
         <main className='flex flex-1 items-center justify-center bg-[#0f0f1a] p-4'>
@@ -88,6 +89,14 @@ const SignUp = () => {
                         </div>
                     </div>
 
+                    {/* Terms & Conditions */}
+                    <p className="text-xs text-gray-500 text-center -mt-3">
+                    By signing up, you agree to our{" "}
+                    <a href="/terms" className="text-blue-600 hover:underline">Terms</a>{" "}
+                    and{" "}
+                    <a href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</a>.
+                    </p>
+
                     {/* Submit */}
                     <button
                         type="submit"
@@ -110,7 +119,7 @@ const SignUp = () => {
         </main>
 
         {/* Footer Placeholder */}
-        <footer className='p-4 text-center bg-white shadow'>
+        <footer className='p-4 mt-auto text-center bg-white shadow'>
             <p className='text-sm text-gray-500'>© 2025 My App. All rights reserved.</p>
         </footer>
 

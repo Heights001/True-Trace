@@ -7,7 +7,7 @@ const Navbar = () => {
         <header className="p-6 flex justify-between items-center bg-[#111122]/80 border-b border-[#00ffe5]/50 backdrop-blur-md">
 
             <img className='w-16 rounded-md' src='/src/assets/Navicon.png'/>
-            <h1 className="text-2xl font-bold text-[#00ffe5]">TrueTrace</h1>
+            <h1 className="text-2xl items-center font-bold text-[#00ffe5]">True Trace</h1>
 
             <nav className='flex gap-6'>
 
