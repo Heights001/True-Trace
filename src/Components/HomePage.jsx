@@ -15,7 +15,7 @@ const HomePage = () => {
 
                 <p className='text-lg md:text-xl text-[#cfd8dc]/80 max-w-2xl'> Analyze All digital Media types and detect whether they are AI-generated or real. Take control of digital evidence with our futuristic legal toolkit.</p>
 
-                <a href="#" className='mt-4 px-8 py-3 bg-[#ff00ff] rounded hover:bg-[#ff00ff]/80 text-white font-semibold transition'>
+                <a href="SignUp.jsx" className='mt-4 px-8 py-3 bg-[#ff00ff] rounded hover:bg-[#ff00ff]/80 text-white font-semibold transition'>
                 Get Started
                 </a>
             </section>
