@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { Link, } from "react-router-dom";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -57,7 +59,7 @@ const Login = () => {
                             <span>Remember me</span>
                         </label>
 
-                        <a href='#' className='text-blue-600 font-medium hover:underline'>Forgot Password?</a>
+                        <Link to="/password" className='text-blue-600 font-medium hover:underline'>Forgot Password?</Link>
                     </div>
 
                     {/* Submit */}
@@ -70,7 +72,7 @@ const Login = () => {
 
                     {/* SignUp Link */}
                     <p className='text-center text-sm'>Don't have an account? {' '}
-                        <a href='#' className='text-blue-600 font-semibold hover:underline'>Sign Up</a>
+                        <Link to="../signup" className='text-blue-600 font-semi-bold hover:underline'>Sign Up</Link>
                     </p>
                 </form>
 
@@ -78,9 +80,7 @@ const Login = () => {
         </main>
 
         {/* Footer placeholder */}
-        <footer className='p-4 mt-auto text-center bg-white shadow'>
-            <p className='text-sm text-gray-500'>© 2025 My App. All rights reserved.</p>
-        </footer>
+        <Footer />
 
     </div>
   );

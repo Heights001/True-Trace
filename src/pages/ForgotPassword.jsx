@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { Link, } from "react-router-dom";
+
 
 const ForgotPassword = () => {
     const [email, setEmail] = useState("");
@@ -44,16 +47,14 @@ const ForgotPassword = () => {
 
                     {/* Back to Login */}
                     <p className='text-center text-sm'>Remembered your password? {" "}
-                        <a href="#" className="text-blue-600 font-semibold hover:underline">Login</a>
+                        <Link to="../login" className="text-blue-600 font-semi-bold hover:underline">Login</Link>
                     </p>
                 </form>
             </div>
         </main> 
 
         {/* Footer placeholder */} 
-        <footer className='p-4 text-center bg-white shadow mt-auto'>
-            <p className="text-sm text-gray-500">© 2025 My App. All rights reserved.</p>
-        </footer>
+        <Footer />
     </div>
   )
 }

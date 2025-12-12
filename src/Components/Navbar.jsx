@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -7,22 +7,23 @@ const Navbar = () => {
         {/* Navbar */}
         <header className="p-6 flex justify-between items-center bg-[#111122]/80 border-b border-[#00ffe5]/50 backdrop-blur-md">
 
-          <img className='w-16 rounded-md' src='/src/assets/Navicon.png'/>
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              className="w-16 rounded-md hover:opacity-80 transition"
+              src="/src/assets/Navicon.png"
+              alt="TrueTrace Logo"
+            />
+          </Link>
           <h1 className="text-2xl ml-20 items-center font-bold text-[#00ffe5]">True_Trace</h1>
 
             <ul className='flex gap-6'>
-              <li className="hover:text-[#ff00ff] transition"><Link to="/HomePage"></Link>Home</li>
-              <li className="hover:text-[#ff00ff] transition"><Link to="/About"></Link>About</li>
-              <li className="hover:text-[#ff00ff] transition"><Link to="/SignUp"></Link>Account</li>
-
-              {/* 
-              <a href='###' className="hover:text-[#ff00ff] transition">Home</a>
-              <a href='###' className="hover:text-[#ff00ff]  transition">About</a>
-              <a href='###' className="hover:text-[#ff00ff] transition">Account</a>*/}
+              <li><Link to="/about" className="hover:text-[#ff00ff] transition">About</Link></li>
+              <li><Link to="/contact" className="hover:text-[#ff00ff] transition">Contact</Link></li>
+              <li><Link to="/login" className="hover:text-[#ff00ff] transition">Account</Link></li>
             </ul>
         </header>
       </div>
-  )
-}
+  );
+};
 
 export default Navbar

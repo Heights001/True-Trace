@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
+import { Link, } from "react-router-dom";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -108,9 +110,7 @@ const SignUp = () => {
                     {/*Login link */}
                     <p className='text-center text-sm'>
                         Already have an account? {" "}
-                        <a href="#" className="text-blue-600 font-semibold hover:underline">
-                            Login
-                        </a>
+                        <Link to="../login" className="text-blue-600 font-semi-bold hover:underline">Log in</Link>
                     </p>
 
                 </form>
@@ -119,9 +119,7 @@ const SignUp = () => {
         </main>
 
         {/* Footer Placeholder */}
-        <footer className='p-4 mt-auto text-center bg-white shadow'>
-            <p className='text-sm text-gray-500'>© 2025 My App. All rights reserved.</p>
-        </footer>
+       <Footer />
 
     </div>
     </>

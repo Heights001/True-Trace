@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
 
 const Dashboard = () => {
     const [uploadImage, setUpuoadedImage] = useState(null);

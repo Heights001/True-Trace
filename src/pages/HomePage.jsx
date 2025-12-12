@@ -1,23 +1,23 @@
-import React from 'react'
-import Navbar from './Navbar';
+import { Link, } from "react-router-dom";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
     <>
         <div className='min-h-screen bg-[#0f0f1a] text-[#cfd8dc] font-mono relative overflow-hidden'>
-            <div><Navbar /></div>
+            <Navbar />
 
 
-            {/* Hero Section */}
+            {/* Hero Section {/* blue old color text-[#00aaff]*/}
             <section className='flex flex-col items-center justify-center text-center py-24 px-6 gap-6'>
 
-                <h2 className='text-5xl md:text-6xl font-bold text-[#00aaff]'> Uncover the Truth </h2>
+                <h2 className='text-5xl md:text-5xl font-bold text-[#00ffe5]'>Uncover the Truth</h2>
 
                 <p className='text-lg md:text-xl text-[#cfd8dc]/80 max-w-2xl'> Analyze All digital Media types and detect whether they are AI-generated or real. Take control of digital evidence with our futuristic legal toolkit.</p>
 
-                <a href="SignUp.jsx" className='mt-4 px-8 py-3 bg-[#ff00ff] rounded hover:bg-[#ff00ff]/80 text-white font-semibold transition'>
-                Get Started
-                </a>
+                <Link to="/signup" className="mt-4 px-8 py-3 bg-[#ff00ff] rounded hover:bg-[#ff00ff]/80 text-white font-semibold transition">Get Started For Free</Link>
+
             </section>
 
             {/* Features Section */}
@@ -61,12 +61,8 @@ const HomePage = () => {
             </section>
 
             {/* Footer */}
-            <footer className="p-6 text-center bg-[#111122]/80 border-t border-[#00ffe5]/50 backdrop-blur-md">
-                <a href="https://www.flaticon.com/free-icons/ethics" title="ethics icons">Ethics icons created by Freepik - Flaticon</a>
-                
-                <p className='text-sm text-[#cfd8dc]/70'>© 2025 TruthAnalyzer. All rights reserved.</p>
-            </footer>
-    
+            <Footer />
+
         </div>
     </>
   );

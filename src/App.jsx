@@ -1,26 +1,33 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './Components/HomePage'
-import SignUp from './Components/SignUp'
-import Login from './Components/Login'
-import ForgotPassword from './Components/ForgotPassword';
-import Dashboard from './Components/Dashboard';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+import HomePage from './pages/HomePage'
+import SignUp from './pages/SignUp'
+import Login from './pages/Login'
+import ForgotPassword from './pages/ForgotPassword';
+import Dashboard from './pages/Dashboard';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 export default function App() {  
 
   return (
     <>
+      <main>
 
-      {/* Routes */}
-      <Routes>
-
-        <Route path="/HomePage" element={<HomePage />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/ForgotPassword" element={<ForgotPassword />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-
-      </Routes>
+        {/* Routes */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/password" element={<ForgotPassword />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+        </Routes> 
+      </main>    
     </>
-
   );
 };
