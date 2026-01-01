@@ -20,7 +20,7 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="text-center md:text-left">
-          <h3 className="text-l font-semi-bold text-[#ff00ff] mb-3">Quick Links</h3>
+          <h3 className="text-lg font-semibold text-[#ff00ff] mb-3">Quick Links</h3>
           <ul className="flex flex-col gap-2">
             <li><Link to="/" className="hover:text-[#00ffe5] transition">Home</Link></li>
             <li><Link to="/about" className="hover:text-[#00ffe5] transition">About</Link></li>
@@ -28,13 +28,12 @@ const Footer = () => {
             <li><Link to="/login" className="hover:text-[#00ffe5] transition">Account</Link></li>
             <li><Link to="/terms" className="hover:text-[#00ffe5] transition">Terms of Service</Link></li>
             <li><Link to="/privacy" className="hover:text-[#00ffe5] transition">Privacy Policy</Link></li>
-
           </ul>
         </div>
 
         {/* Social / Contact */}
         <div className="text-center md:text-left">
-          <h3 className="text-l font-semi-bold text-[#00aaff] mb-3">Connect</h3>
+          <h3 className="text-lg font-semibold text-[#00aaff] mb-3">Connect</h3>
           <ul className="flex flex-col gap-2">
             <li>
               <a
@@ -48,6 +47,7 @@ const Footer = () => {
               <a
                 href="https://github.com/Heights001"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-[#ff00ff] transition"
               >
                 GitHub
@@ -57,6 +57,7 @@ const Footer = () => {
               <a
                 href="https://www.twitter.com/hussle_heights"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-[#ff00ff] transition"
               >
                 Twitter / X
