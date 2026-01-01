@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 import { Link, } from "react-router-dom";
 import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
 

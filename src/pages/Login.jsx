@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 import { Link, useNavigate, } from "react-router-dom";
 import { auth } from '../firebase'; 
 import { signInWithEmailAndPassword } from 'firebase/auth';
