@@ -82,7 +82,7 @@ const ForgotPassword = () => {
                         className='w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-50 disabled={loading}'>
                         {loading ? 'Sending...' : 'Send reset Link'}                      
                     </button>
-
+                    
                     {/* Back to Login */}
                     <p className='text-center text-sm'>Remembered your password? {" "}
                         <Link to="../login" className="text-blue-600 font-semi-bold hover:underline">Login</Link>
